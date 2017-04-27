@@ -1,5 +1,5 @@
 before_install: sudo apt-get install check
 language: c
 compiler: gcc
-script: make test
+script: make test $coord_2d_suite
 sudo: required
