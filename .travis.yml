@@ -1,4 +1,5 @@
+before_install: sudo apt-get install check
 language: c
-compiler: clang
-install: make get-debs
-script: ./geometry_test.c $TEST_SUIT
+compiler: gcc
+script: make test
+sudo: required
